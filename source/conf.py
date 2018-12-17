@@ -22,11 +22,9 @@ needs_sphinx = '1.6'
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-# other recommended: sphinx.ext.graphviz
+#extensions = []
 
 numfig = True
-todo_include_todos=False
-#graphviz_output_format = 'svg' # uncomment for graphviz
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
