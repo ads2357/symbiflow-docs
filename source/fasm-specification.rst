@@ -152,12 +152,16 @@ Example Canonicalization
 becomes
 
 ``ALUT.INIT``
-    
+
+----
+
 ``ALUT.SMALL = 1``
 
 becomes
 
 ``ALUT.SMALL``
+
+----
 
 ``ALUT.INIT[3:0] = 4'b1101``
 
