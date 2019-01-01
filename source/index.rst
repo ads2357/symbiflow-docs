@@ -6,4 +6,4 @@ SymbiFlow documentation
    :maxdepth: 2
 
    introduction
-   fasm
+   fasm-specification
