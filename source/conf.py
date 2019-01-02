@@ -24,7 +24,7 @@ needs_sphinx = '1.6'
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = ['sphinx.ext.intersphinx']
 
-intersphinx_mapping = {'python': ('https://prjtrellis.readthedocs.io/', None)}
+intersphinx_mapping = {'Project Trellis': ('https://prjtrellis.readthedocs.io/', None)}
 
 numfig = True
 
