@@ -38,7 +38,7 @@ Examples FASM feature lines
 Canonical enabling of feature
 `````````````````````````````
 
-.. code-block::
+.. code-block:: txt
 
     # Set a single feature bit to 1 (with an implicit 1)
     INT_L_X10Y146.SW6BEG0.WW2END0
