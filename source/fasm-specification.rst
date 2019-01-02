@@ -38,7 +38,7 @@ Examples FASM feature lines
 Canonical enabling of feature
 `````````````````````````````
 
-.. code-block:: txt
+.. code-block:: text
 
     # Set a single feature bit to 1 (with an implicit 1)
     INT_L_X10Y146.SW6BEG0.WW2END0
@@ -47,7 +47,7 @@ Canonical enabling of feature
 Recommended bitarray
 ````````````````````
 
-.. code-block::
+.. code-block:: text
 
     # Setting a bitarray
     CLBLL_R_X13Y132.SLICEL_X0.ALUT.INIT[63:32] = 32'b11110000111100001111000011110000
@@ -55,7 +55,7 @@ Recommended bitarray
 Permitted advanced variations
 `````````````````````````````
 
-.. code-block::
+.. code-block:: text
 
     # The bitarray syntax also allows explicit 1 and explicit 0, if verbosity is desired.
     # An explicit 1 is the same as an implicit 1.
@@ -82,7 +82,7 @@ Annotations that are on the same line as a FASM feature are associated with the 
 Example Annotations
 ~~~~~~~~~~~~~~~~~~~
 
-.. code-block::
+.. code-block:: text
 
     # Annotation on a FASM feature
     INT_L_X10Y146.SW6BEG0.WW2END0 { .attr = "" }
@@ -98,7 +98,7 @@ Example Annotations
 Formal syntax specification of a line of a FASM file
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. code-block::
+.. code-block:: text
 
     Identifier ::= [a-zA-Z] [0-9a-zA-Z]*
     Feature ::= Identifier ( '.' Identifier )*
