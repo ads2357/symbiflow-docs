@@ -15,7 +15,7 @@ An empty FASM file will generate a platform specific "default" bitstream. The FA
 File Syntax description
 -----------------------
 
-FASM is a line orientated format. 
+FASM is a line oriented format.
 
 * A single FASM line will do nothing (blank or comments or annotations) or enable a set of features.
 * The FASM file format does not support line continuations. Enabling a feature will always be contained within one line.
