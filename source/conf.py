@@ -82,25 +82,17 @@ exclude_patterns = []
 #show_authors = False
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+pygments_style = 'default'
 
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
-
-# TODO Antmicro modification - additional variable for general theme name
-theme = 'symbiflow'
-
 
 # -- Options for HTML output ---------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 
-html_theme = theme+'-sphinx'
-
-# TODO Antmicro modification - additional variable for theme file directory, for
-# historical reasons this = html_theme
-theme_dir = html_theme
+html_theme = "sphinx_symbiflow_theme"
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -108,7 +100,7 @@ theme_dir = html_theme
 #html_theme_options = {}
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = ['.']
+#html_theme_path = None
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -218,8 +210,6 @@ man_pages = [
      [authors], 1)
 ]
 
-latex_additional_files = ['%s/%s.sty' % (theme_dir,theme)]
-
 latex_elements = {
     'papersize': 'a4paper',
     'pointsize': '11pt',
@@ -229,9 +219,8 @@ latex_elements = {
         \usepackage{inconsolata}
     ''',
     'preamble': r'''
-          \usepackage{%s}
           \usepackage{multicol}
-    ''' % theme,
+    ''',
     'maketitle': r'''
         \renewcommand{\releasename}{}
         \maketitle
