@@ -22,7 +22,9 @@ needs_sphinx = '1.6'
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-#extensions = []
+extensions = ['sphinx.ext.intersphinx']
+
+intersphinx_mapping = {'Project Trellis': ('https://prjtrellis.readthedocs.io/', None)}
 
 numfig = True
 
@@ -42,7 +44,7 @@ master_doc = 'index'
 project = u'SymbiFlow - documentation'
 basic_filename = u'symbiflow-docs'
 authors = u'SymbiFlow'
-copyright = authors + u', 2018'
+copyright = authors + u', 2019'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
